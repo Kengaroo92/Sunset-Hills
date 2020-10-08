@@ -1,9 +1,9 @@
-﻿let userinput1 = parseInt(document.getElementById("userInputA").value);
-let userinput2 = parseInt(document.getElementById("userInputB").value);
-let userinput3 = parseInt(document.getElementById("userInputC").value);
-let userinput4 = parseInt(document.getElementById("userInputD").value);
-let userinput5 = parseInt(document.getElementById("userInputE").value);
-let userinput6 = parseInt(document.getElementById("userInputF").value);
+﻿let userInput1 = parseInt(document.getElementById("userInputA").value);
+let userInput2 = parseInt(document.getElementById("userInputB").value);
+let userInput3 = parseInt(document.getElementById("userInputC").value);
+let userInput4 = parseInt(document.getElementById("userInputD").value);
+let userInput5 = parseInt(document.getElementById("userInputE").value);
+let userInput6 = parseInt(document.getElementById("userInputF").value);
 
     let userArray = [userInput1, userInput2, userInput3, userInput4, userInput5, userInput6];
     let buildArray = [];
@@ -19,6 +19,6 @@ let userinput6 = parseInt(document.getElementById("userInputF").value);
                 buildArray += userArray[i];
                 currentMax = userArray[i];
             }
-            document.getElementById("sunshine").innerHTML = `There are: ${count} that get sunshine. Those buildings are: ${buildArray}`;
+            document.getElementById("sunshine").innerHTML = count + buildArray;
         }
     }
