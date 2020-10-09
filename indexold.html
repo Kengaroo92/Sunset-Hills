@@ -5,18 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Sunset Hills Challenge Mini Site completed and created by Kenan Bjelosevic.">
     <meta name="author" content="Kenan Bjelosevic">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/littleman_favicon.ico" />
 
     <!-- Title of Page -->
-    <title>Name of Challenge - Mini Site</title>
+    <title>Sunset Hills - Mini Site</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- My Custom CSS Files -->
     <link href="content/custom.css" rel="stylesheet" />
@@ -26,9 +25,9 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <nav class="custnav navbar navbar-expand-lg static-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Name of Challenge</a>
+            <a class="navbar-brand" href="index.html">Sunset Hills Challenge</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,13 +48,36 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Name of Challenge</h1>
+                <h1 class="mt-5">Sunset Hills Challenge</h1>
                 <p class="lead">A quick description of the challenge being represented.</p>
                 <ul class="list-unstyled">
                     <li>A more detailed description of the challenge being represented</li>
                     <li>How does the challenge work?</li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <!-- Sunset Hills UI -->
+    <div class="container">
+        <div class="row">
+            <div class="col"><input type="number" id="userInput1" placeholder="Height of Building 1" /></div>
+            <div class="col"><input type="number" id="userInput2" placeholder="Height of Building 2" /></div>
+            <div class="col"><input type="number" id="userInput3" placeholder="Height of Building 3" /></div>
+            <div class="col"><input type="number" id="userInput4" placeholder="Height of Building 4" /></div>
+            <div class="col"><input type="number" id="userInput5" placeholder="Height of Building 5" /></div>
+            <div class="col"><input type="number" id="userInput6" placeholder="Height of Building 6" /></div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+                <div class="col card">
+            <button class="btn cusbtn btn-secondary" onclick="sunsetHills()">Let the Sun Shine!</button>
+            <button id="btnclear" class="btn cusbtn btn-secondary">Go Away Sun!</button>
+                </div>
+        </div>
+        <div class="row">
+            <p id="sunshine"></p>
         </div>
     </div>
 
