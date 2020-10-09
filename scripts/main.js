@@ -21,6 +21,6 @@ function sunsetHills() {
                 buildArray.push(userArray[i]) ;
                 currentMax = userArray[i];
             }
-            document.getElementById("sunshine").innerHTML = `count: ${count} [${buildArray}]`;
+            document.getElementById("sunshine").innerHTML = `${count} buildings can see the sun. Those are buildings [${buildArray.join()}]`;
         }
     }

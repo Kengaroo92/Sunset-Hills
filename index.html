@@ -23,20 +23,20 @@
 
 </head>
 
-<body>
+<body class="custbody">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Name of Challenge</a>
+            <a class="navbar-brand" href="index.html">Sunset Hills Challenge</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="solve.html">Solve</a></li>
-                    <li class="nav-item"><a class="nav-link" href="code.html">My Code</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="solve.html">Solve</a></li>
+                    <li class="nav-item"><a class="nav-link" href="code.html">My Code</a></li>-->
                     <li class="nav-item"><a class="nav-link" href="https://github.com/Kengaroo92" target="_blank">GitHub</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://www.kenanbjelosevic.com/" target="_blank">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">My Blog</a></li>
@@ -49,13 +49,31 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Name of Challenge</h1>
-                <p class="lead">A quick description of the challenge being represented.</p>
+                <h1 class="mt-5">Sunset Hills Challenge</h1>
+                <p class="lead">The Sunset Hills coding challenge is intended to assess a candidate's ability to work with Arrays.</p>
                 <ul class="list-unstyled">
-                    <li>A more detailed description of the challenge being represented</li>
-                    <li>How does the challenge work?</li>
+                    <li>An array of buildings is facing the sun. The heights of each building from West to East is given in an integer array. You have to tell which buildings will be able to see the sunset.</li>
+                    <li>Technologies Used: HTML, JavaScript, jQuery, CSS, Bootstrap.</li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <!-- Sunset Hills UI -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2"><input type="number" id="userInput1" placeholder="Height of Building 1" /></div>
+            <div class="col-2"><input type="number" id="userInput2" placeholder="Height of Building 2" /></div>
+            <div class="col-2"><input type="number" id="userInput3" placeholder="Height of Building 3" /></div>
+            <div class="col-2"><input type="number" id="userInput4" placeholder="Height of Building 4" /></div>
+            <div class="col-2"><input type="number" id="userInput5" placeholder="Height of Building 5" /></div>
+            <div class="col-2"><input type="number" id="userInput6" placeholder="Height of Building 6" /></div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col"><button class="btn btn-secondary" onclick="sunsetHills()">Let the Sun Shine!</button></div>
+            <div class="col"><p id="sunshine"</div>
         </div>
     </div>
 
